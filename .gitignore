@@ -1,0 +1,105 @@
+
+# ==============================
+# ENVIRONMENT & SECRETS
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# PYTHON
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# ==============================
+# JUPYTER NOTEBOOKS
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# DATASETS & MEDICAL DATA
+# ==============================
+data/*
+!data/README.md
+!data/**/README.md
+
+# ==============================
+# MODEL WEIGHTS & CHECKPOINTS
+# ==============================
+models/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.keras
+
+# ==============================
+# VECTOR DATABASE & INDEXES
+# ==============================
+*.index
+*.faiss
+*.pkl
+*.pickle
+*.joblib
+
+# ==============================
+# GENERATED FILES
+# ==============================
+logs/
+outputs/
+artifacts/
+*.log
+*.tmp
+
+# Keep evaluation results directory
+evaluation/results/*
+!evaluation/results/.gitkeep
+
+# ==============================
+# LARGE DEMO FILES
+# ==============================
+demo/*.mp4
+demo/*.mov
+demo/*.avi
+
+# ==============================
+# TEMPORARY REPORT FILES
+# ==============================
+*.docx
+*.pdf
+*.zip
+
+# ==============================
+# TESTING & CACHE
+# ==============================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# IDE & EDITOR
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# OPERATING SYSTEM
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
