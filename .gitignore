@@ -1,105 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 
-# ==============================
-# ENVIRONMENT & SECRETS
-# ==============================
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/*
+!data/README.md
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# FAISS indexes
+*.index
+*.faiss
+
+# Generated artifacts
+artifacts/*
+!artifacts/README.md
+
+# Environment variables
 .env
 .env.*
 !.env.example
 
-# ==============================
-# PYTHON
-# ==============================
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-.venv/
-env/
-ENV/
-pip-wheel-metadata/
+# Kaggle credentials
+kaggle.json
 
-# ==============================
-# JUPYTER NOTEBOOKS
-# ==============================
-.ipynb_checkpoints/
-
-# ==============================
-# DATASETS & MEDICAL DATA
-# ==============================
-data/*
-!data/README.md
-!data/**/README.md
-
-# ==============================
-# MODEL WEIGHTS & CHECKPOINTS
-# ==============================
-models/
-weights/
-checkpoints/
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.h5
-*.keras
-
-# ==============================
-# VECTOR DATABASE & INDEXES
-# ==============================
-*.index
-*.faiss
-*.pkl
-*.pickle
-*.joblib
-
-# ==============================
-# GENERATED FILES
-# ==============================
-logs/
-outputs/
-artifacts/
+# Logs
 *.log
-*.tmp
 
-# Keep evaluation results directory
-evaluation/results/*
-!evaluation/results/.gitkeep
-
-# ==============================
-# LARGE DEMO FILES
-# ==============================
-demo/*.mp4
-demo/*.mov
-demo/*.avi
-
-# ==============================
-# TEMPORARY REPORT FILES
-# ==============================
-*.docx
-*.pdf
-*.zip
-
-# ==============================
-# TESTING & CACHE
-# ==============================
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# ==============================
-# IDE & EDITOR
-# ==============================
-.vscode/
-.idea/
-
-# ==============================
-# OPERATING SYSTEM
-# ==============================
+# OS files
 .DS_Store
 Thumbs.db
-Desktop.ini
+
+# IDE
+.vscode/
+.idea/
