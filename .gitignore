@@ -1,48 +1,48 @@
-# Python
+
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environment
+# Virtual environments
 venv/
 .venv/
 env/
 
+# Environment variables and secrets
+.env
+.env.*
+
 # Jupyter
 .ipynb_checkpoints/
 
-# Dataset
-data/*
-!data/README.md
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
-# Model weights
+# Dataset files
+data/
+*.zip
+*.dcm
+
+# Model checkpoints
 *.pth
 *.pt
 *.ckpt
 
-# FAISS indexes
-*.index
-*.faiss
+# Generated retrieval artifacts
+artifacts/*.index
+artifacts/*.npy
+artifacts/*.csv
 
-# Generated artifacts
-artifacts/*
-!artifacts/README.md
-
-# Environment variables
-.env
-.env.*
-!.env.example
-
-# Kaggle credentials
-kaggle.json
-
-# Logs
+# Generated images and outputs
+outputs/
+logs/
 *.log
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
